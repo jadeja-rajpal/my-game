@@ -18,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProActivity"></activity>
+        <activity android:name=".ProActivity" />
+        <activity android:name=".AddmoneyActivity" />
+        <activity android:name=".WithdrawlActivity"></activity>
     </application>
 
 </manifest>

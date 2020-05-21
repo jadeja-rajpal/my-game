@@ -23,8 +23,13 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.concurrent.TimeUnit;
 
 
@@ -40,7 +45,10 @@ public class MainActivity  extends AppCompatActivity {
 
     private FirebaseUser currentUser;
     String codeSent;
+    FirebaseUser user;
 
+
+    String uid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,8 +61,7 @@ public class MainActivity  extends AppCompatActivity {
         reference=userInfoDatabse.getReference("Users");
         mAuth=FirebaseAuth.getInstance();
         currentUser=mAuth.getCurrentUser();
-        etPassword2=(EditText)findViewById(R.id.etPassword2);
-        etPassword1=(EditText)findViewById(R.id.etPassword1);
+
         editTextCode = findViewById(R.id.editTextCode);
         editTextPhone = findViewById(R.id.editTextPhone);
         progressBar=findViewById(R.id.progressbar);
@@ -81,7 +88,12 @@ public class MainActivity  extends AppCompatActivity {
         String code = editTextCode.getText().toString();
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(codeSent, code);
         signInWithPhoneAuthCredential(credential);
+
     }
+
+     DatabaseReference databaseReference=FirebaseDatabase.getInstance().getReference().child("users");
+
+
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)
@@ -89,13 +101,66 @@ public class MainActivity  extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            FirebaseUser user;
+                            final String uid;
+                            user=FirebaseAuth.getInstance().getCurrentUser();
+                            uid=user.getUid();
+                            final String number = editTextPhone.getText().toString();
+                            final DatabaseReference databaseReference=FirebaseDatabase.getInstance().getReference().child("users");
+                            databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    boolean found=false;
+
+                                    for(DataSnapshot data: dataSnapshot.getChildren())
+                                    {
+                                       if(data.getKey().equals(uid)){
+                                           found=true;
+                                           break; }
+
+                                    }
+                                    if(found){
+                                          Toast.makeText(getApplicationContext(),
+                                                  " WELCOME AGAIN", Toast.LENGTH_LONG).show();
+                                         Intent t =new Intent(MainActivity.this, ProActivity.class);
+                                          t.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                           startActivity(t);//h
+                                    }
+                                    else{
+                                        FirebaseUser user;
+                                        final String number = editTextPhone.getText().toString();
+                                        final String uid;
+                                        user=FirebaseAuth.getInstance().getCurrentUser();
+                                        uid=user.getUid();
+                                        DatabaseReference databaseReference=FirebaseDatabase.getInstance().getReference("users").child(uid);
+                                        DatabaseReference mynumber=databaseReference.child("number");
+
+                                        DatabaseReference mybalance=databaseReference.child("balance");
+                                        mynumber.setValue(number);
+                                        mybalance.setValue(0);
+
+                                        Toast.makeText(getApplicationContext(),
+                                                " WELCOME !! NEW USER", Toast.LENGTH_LONG).show();
+                                        Intent t =new Intent(MainActivity.this, ProActivity.class);
+                                        t.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                        startActivity(t);
+                                    }
 
 
-                            Toast.makeText(getApplicationContext(),
-                                    "Login Successfull", Toast.LENGTH_LONG).show();
-                            Intent t =new Intent(MainActivity.this, ProActivity.class);
-                            t.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                            startActivity(t);
+
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                }
+                            });
+
+
+                           Toast.makeText(getApplicationContext(),
+                                    "Login Successfull" +number, Toast.LENGTH_LONG).show();
+
+
                         } else {
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 Toast.makeText(getApplicationContext(),
@@ -108,7 +173,8 @@ public class MainActivity  extends AppCompatActivity {
 
     private void sendVerificationCode(){
 
-        String phone = editTextPhone.getText().toString();
+        String phone;
+        phone = editTextPhone.getText().toString();
 
         if(phone.isEmpty()){
             editTextPhone.setError("Phone number is required");

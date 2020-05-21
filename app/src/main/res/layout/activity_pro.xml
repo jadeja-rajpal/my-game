@@ -4,12 +4,234 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:weightSum="10"
     android:layout_height="match_parent"
     tools:context=".ProActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="logout"
-        android:id="@+id/logout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:layout_weight="2">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="130dp"
+            app:cardElevation="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/balance"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:id="@+id/first"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:layout_marginLeft="13dp"
+
+                android:text="Game xyz"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:textSize="18sp"
+
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                android:text="Color"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:id="@+id/second"
+            android:layout_below="@+id/first"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:textSize="18sp"
+                android:layout_marginLeft="13dp"
+
+                android:text="Alphabet"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:textSize="18sp"
+
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                android:text="Number"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:id="@+id/third"
+            android:layout_below="@+id/second"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:textSize="18sp"
+                android:layout_marginLeft="13dp"
+
+                android:text="City Name"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:textSize="18sp"
+
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13dp"
+                android:text="Metal" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:id="@+id/four"
+            android:layout_below="@+id/third"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:textSize="18sp"
+                android:id="@+id/Addmoney"
+                android:layout_marginLeft="13dp"
+
+                android:text="Add money"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/Withdrawlmoney"
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:textSize="18sp"
+
+                android:layout_marginRight="13dp"
+
+                android:layout_marginLeft="13dp"
+
+                android:text="WITHdrawl money" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:id="@+id/fifth"
+            android:layout_below="@+id/four"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:textSize="18sp"
+                android:layout_marginLeft="13dp"
+
+                android:text="Contact Us"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:textColor="@color/white"
+                android:background="@drawable/yellow"
+                android:textSize="18sp"
+
+                android:layout_marginRight="13dp"
+
+                android:layout_marginLeft="13dp"
+                android:id="@+id/logout"
+                android:text="Logout" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
 </LinearLayout>

@@ -2,44 +2,38 @@ package com.example.jadejarajpalsinh.betting.Model;
 
 public class UserInformation {
 
-    String editTextPhone;
-    String etPassword1;
+    String number;
 
-    int rupees;
+
+    String balance;
 
     public UserInformation() {
     }
 
-    public UserInformation(String editTextPhone, String etPassword1 , int rupees) {
-        this.editTextPhone = editTextPhone;
-        this.etPassword1 = etPassword1;
+    public UserInformation(String number , String  balance) {
+        this.number = number;
 
-        this.rupees = rupees;
+
+        this.balance = balance;
     }
 
 
-    public String getEditTextPhone() {
-        return editTextPhone;
+    public String getNumber() {
+        return number;
     }
 
-    public void setEditTextPhone(String editTextPhone) {
-        this.editTextPhone = editTextPhone;
-    }
-
-    public String getEtPassword1() {
-        return etPassword1;
-    }
-
-    public void setEtPassword1(String etPassword1) {
-        this.etPassword1 = etPassword1;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
 
-    public int getRupees() {
-        return rupees;
+
+
+    public String getBalance() {
+        return balance;
     }
 
-    public void setRupees(int rupees) {
-        this.rupees = rupees;
+    public void setBalance(String balance) {
+        this.balance = balance;
     }
 }

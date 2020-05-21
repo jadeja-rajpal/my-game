@@ -5,12 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-
+    tools:context=".WithdrawlActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="130dp"
         android:background="@color/colorAccent"
         android:orientation="vertical">
 
@@ -21,11 +19,10 @@
             android:layout_marginTop="40dp"
             android:textColor="#fff"
             android:textStyle="bold"
-            android:text="SignUp"
+            android:text="Withdrawl"
             android:layout_gravity="center_horizontal"
             />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,10 +30,25 @@
 
         android:layout_margin="20dp"
         android:orientation="vertical">
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextPhone"
+            android:id="@+id/Money"
+            android:padding="15dp"
+            android:hint="Enter Amount"
+            android:drawableStart="@drawable/ic_attach_money_black_24dp"
+            android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:background="@drawable/textbox"
+            android:layout_gravity="center"
+            android:textColor="#000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
             android:padding="15dp"
             android:hint="Enter your number"
             android:drawableStart="@drawable/ic_phone_android_black_24dp"
@@ -47,80 +59,32 @@
             android:background="@drawable/textbox"
             android:layout_gravity="center"
             android:textColor="#000"/>
-
-
-
-
-
-
-        <LinearLayout
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="9"
-
+            android:padding="15dp"
+            android:hint="Enter your UPI ID"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:inputType="number"
             android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-            <EditText
-                android:layout_width="90dp"
-                android:layout_height="50dp"
-                android:id="@+id/editTextCode"
-                android:padding="15dp"
-                android:hint="code"
-                android:layout_weight="5"
-                android:drawableStart="@drawable/ic_account_box_black_24dp"
-                android:drawableLeft="@drawable/ic_account_box_black_24dp"
-                android:textSize="15sp"
-                android:background="@drawable/textbox"
-                android:layout_gravity="center"
-
-                android:textColor="#000"/>
-
-
-            <ProgressBar
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:visibility="gone"
-                android:layout_weight="2"
-
-                android:id="@+id/progressbar"/>
-            <Button
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_weight="2"
-                android:background="@drawable/yellow"
-                android:text="otp"
-                android:layout_marginLeft="20dp"
-
-
-                android:id="@+id/buttonGetVerificationCode"
-                android:textColor="#fff"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
-
-
-
-
-        </LinearLayout>
-
-
+            android:textSize="15sp"
+            android:background="@drawable/textbox"
+            android:layout_gravity="center"
+            android:textColor="#000"/>
 
 
         <Button
-            android:layout_width="250dp"
-            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/yellow"
-            android:text="Register"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-
-
-            android:id="@+id/buttonSignIn"
+            android:text="Withdrawl"
+            android:layout_marginLeft="80dp"
             android:textColor="#fff"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"/>
 
 
     </LinearLayout>
-
 </LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddmoneyActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:layout_marginTop="40dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="ADD MONEY"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Money"
+            android:padding="15dp"
+            android:hint="Enter Amount"
+            android:drawableStart="@drawable/ic_attach_money_black_24dp"
+            android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:background="@drawable/textbox"
+            android:layout_gravity="center"
+            android:textColor="#000"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/yellow"
+            android:text="ADD"
+            android:layout_marginLeft="100dp"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+</LinearLayout>
