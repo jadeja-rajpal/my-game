@@ -3,18 +3,30 @@
 
     <item
         android:state_pressed="true">
-        <ripple android:color="@color/orange"
+        <ripple android:color="#f5f378"
             tools:targetAPi="lollipop">
             <item>
                 <shape android:shape="rectangle">
-                    <solid android:color="@color/orange"/>
+                    <solid android:color="#fdee78"/>
+                    <corners android:radius="25dp"/>
 
                 </shape>
             </item>
         </ripple>
     </item>
-    <item android:state_enabled="true"
-        android:drawable="@color/colorAccent">
+    <item android:state_enabled="true">
+        <ripple android:color="#16bbe9"
+            tools:targetAPi="lollipop">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#16bbe9"/>
+
+
+                </shape>
+            </item>
+        </ripple>
+
+
 
     </item>
 </selector>
