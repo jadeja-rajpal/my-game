@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#333030"
+            android:text="GAME RULE ,xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxx
+ccccccccccccccccccccccccccc
+dddddddddddddddd sssssssssssssssssssssssssssssssssssss
+s
+sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+s
+sssssssssssss
+sssssssssss
+sssssssssssssssssssssss
+ssssssssssssssssssssss
+sssssssssssssssssssssss
+sssssssssssssssss
+sssssssssssss
+sssssssssss
+sssssssssss
+sssssssssss
+d
+d
+d
+d
+d
+d
+dsihdo
+dihd"
+            android:textSize="14dp"/>
+
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#333030"
+        android:text="Note: I have acrefully read all contents of this game rule and i am agreed to continue with my own risk"
+        android:textSize="14dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="ok"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/yellow"
+        android:id="@+id/ruleok"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"
+        />
+
+</LinearLayout>
