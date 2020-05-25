@@ -1,5 +1,6 @@
 package com.example.jadejarajpalsinh.betting;
 
+import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,9 +11,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 public class ColorActivity extends AppCompatActivity {
 
-
+    private TextView retrieve;
     TextView gamecolorline;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +30,27 @@ public class ColorActivity extends AppCompatActivity {
         Button Joingreensheet=findViewById(R.id.Joingreen);
         Button Joinred=findViewById(R.id.Joingred);
         TextView gamerule=findViewById(R.id.gamerule);
+        retrieve = findViewById(R.id.retrieve);
+
+
+        DatabaseReference databaseReference=FirebaseDatabase.getInstance().getReference().child("timer");
+
+
+
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String mytime = dataSnapshot.child("countdown").getValue().toString();
+                retrieve.setText(mytime);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
         Joingreensheet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

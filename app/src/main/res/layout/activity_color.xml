@@ -163,7 +163,7 @@
         android:gravity="center"
             android:textSize="20dp"
         android:background="@drawable/textbox"
-            android:textColor="#2c57d7"
+            android:textColor="#86888b"
             android:layout_weight="0.4"
             android:padding="2dp"
             android:textStyle="bold"
@@ -186,8 +186,8 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:id="@+id/Joingreen"
-            android:background="#a0da62"
-            android:textColor="#fff"
+            android:background="@drawable/greenround"
+            android:textColor="#60b108"
             android:layout_marginLeft="36dp"
             android:layout_marginRight="13dp"
             android:text="Join Green"
@@ -198,8 +198,8 @@
             android:textSize="17dp"
             android:layout_marginLeft="13dp"
             android:layout_marginRight="36dp"
-            android:background="#e45566"
-            android:textColor="#fff"
+            android:background="@drawable/redround"
+            android:textColor="#fc4b54"
             android:id="@+id/Joingred"
             android:layout_gravity="center"
             android:layout_weight="1"
@@ -245,7 +245,16 @@
 
 
     </LinearLayout>
-
+    <TextView
+        android:id="@+id/retrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_reset"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="60sp" />
 
 
 </LinearLayout>

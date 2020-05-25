@@ -62,17 +62,22 @@
             android:layout_marginTop="10dp"
             android:weightSum="2"
             android:id="@+id/first"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:orientation="horizontal">
+
             <Button
+                android:id="@+id/timer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="18sp"
-                android:textColor="@color/white"
-                android:background="@drawable/yellow"
                 android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow"
+                android:text="MEDAL"
 
-                android:text="Game xyz"/>
+                android:textColor="@color/white"
+                android:textSize="18sp" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -94,6 +99,8 @@
             android:layout_marginTop="10dp"
             android:weightSum="2"
             android:id="@+id/second"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:layout_below="@+id/first"
             android:orientation="horizontal">
             <Button
@@ -101,6 +108,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/white"
+                android:layout_marginRight="13dp"
                 android:background="@drawable/yellow"
                 android:textSize="18sp"
                 android:layout_marginLeft="13dp"
@@ -128,10 +136,13 @@
             android:layout_marginTop="10dp"
             android:weightSum="2"
             android:id="@+id/third"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:layout_below="@+id/second"
             android:orientation="horizontal">
             <Button
                 android:layout_width="match_parent"
+                android:layout_marginRight="13dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/white"
@@ -139,7 +150,7 @@
                 android:textSize="18sp"
                 android:layout_marginLeft="13dp"
 
-                android:text="City Name"/>
+                android:text="planet"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -151,16 +162,17 @@
 
                 android:layout_marginRight="13dp"
                 android:layout_marginLeft="13dp"
-                android:text="Metal" />
+                android:text="CURRENCY" />
 
 
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="85dp"
 
-            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="40dp"
             android:weightSum="2"
             android:id="@+id/four"
             android:layout_below="@+id/third"
@@ -169,8 +181,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/white"
-                android:background="@drawable/yellow"
+                android:textColor="#16bbe9"
+                android:background="@drawable/textround"
                 android:textSize="18sp"
                 android:id="@+id/Addmoney"
                 android:layout_marginLeft="13dp"
@@ -181,8 +193,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/Withdrawlmoney"
-                android:textColor="@color/white"
-                android:background="@drawable/yellow"
+                android:textColor="#16bbe9"
+                android:background="@drawable/textround"
                 android:textSize="18sp"
 
                 android:layout_marginRight="13dp"
@@ -196,7 +208,8 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+
+            android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:weightSum="2"
             android:id="@+id/fifth"
@@ -206,7 +219,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/white"
+                android:textColor="#16bbe9"
                 android:background="@drawable/textround"
                 android:textSize="18sp"
                 android:layout_marginLeft="13dp"
@@ -217,7 +230,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
 
-                android:textColor="@color/white"
+                android:textColor="#16bbe9"
                 android:background="@drawable/textround"
                 android:textSize="18sp"
 

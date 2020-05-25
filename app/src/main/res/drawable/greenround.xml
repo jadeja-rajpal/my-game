@@ -17,13 +17,13 @@
     </ripple>
 </item>
 <item android:state_enabled="true">
-    <ripple android:color="#16bbe9"
+    <ripple android:color="#60b108"
         tools:targetAPi="lollipop">
         <item>
             <shape>
                 <solid android:color="#fff"/>
 
-                <stroke android:width="2dp" android:color="#16bbe9"/>
+                <stroke android:width="2dp" android:color="#60b108"/>
                 <corners android:radius="25dp"/>
             </shape>
 
