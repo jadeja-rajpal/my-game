@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".WithdrawlActivity">
+    tools:context=".ContactActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
@@ -16,10 +16,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="50sp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:textColor="#fff"
+
             android:textStyle="bold"
-            android:text="Withdrawl"
+            android:text="GAME TRADE"
             android:layout_gravity="center_horizontal"
             />
     </LinearLayout>
@@ -36,10 +37,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/Money"
             android:padding="15dp"
-            android:hint="Enter Amount"
-            android:drawableStart="@drawable/ic_attach_money_black_24dp"
-            android:drawableLeft="@drawable/ic_attach_money_black_24dp"
-            android:inputType="number"
+            android:hint="Enter Your Gmail"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
             android:layout_marginTop="20dp"
             android:textSize="15sp"
             android:background="@drawable/textbox"
@@ -47,31 +47,16 @@
             android:textColor="#000"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
 
             android:padding="15dp"
-            android:hint="Enter your number"
-            android:drawableStart="@drawable/ic_phone_android_black_24dp"
-            android:drawableLeft="@drawable/ic_phone_android_black_24dp"
-            android:inputType="number"
+            android:hint="Enter your Question ?"
+           android:gravity="left"
             android:layout_marginTop="20dp"
             android:textSize="15sp"
             android:background="@drawable/textbox"
-            android:layout_gravity="center"
             android:textColor="#000"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:hint="Enter your UPI ID"
-            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
-            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
-            android:inputType="number"
-            android:layout_marginTop="20dp"
-            android:textSize="15sp"
-            android:background="@drawable/textbox"
-            android:layout_gravity="center"
-            android:textColor="#000"/>
+
 
 
         <Button
@@ -79,9 +64,8 @@
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/yellow"
-            android:text="Withdrawl"
-            android:layout_gravity="center"
-
+            android:text="SUBMIT"
+           android:layout_gravity="center"
             android:textColor="#fff"
             android:textSize="18sp"
             android:textStyle="bold"/>

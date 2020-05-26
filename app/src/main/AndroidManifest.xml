@@ -22,7 +22,9 @@
         <activity android:name=".AddmoneyActivity" />
         <activity android:name=".WithdrawlActivity" />
         <activity android:name=".ColorActivity" />
-        <activity android:name=".TimerActivity"></activity>
+        <activity android:name=".TimerActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".AdminActivity"></activity>
     </application>
 
 </manifest>

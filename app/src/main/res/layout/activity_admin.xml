@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="match_parent"
+        tools:context=".AdminActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                app:cardElevation="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PERIOD"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="19dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:id="@+id/balance"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COUNT DOWN"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="19dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"/>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/Joingreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greenround"
+                    android:text="+1 Green"
+                    android:textColor="#60b108"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/redround"
+                    android:text="+1 RED"
+                    android:textColor="#fc4b54"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/yellow"
+                android:gravity="center"
+                android:text="WINNER"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greenround"
+                    android:text="+1 Green"
+                    android:textColor="#60b108"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/redround"
+                    android:text="+1 RED"
+                    android:textColor="#fc4b54"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/yellow"
+                android:gravity="center"
+                android:text="WINNER"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greenround"
+                    android:text="+1 Green"
+                    android:textColor="#60b108"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/redround"
+                    android:text="+1 RED"
+                    android:textColor="#fc4b54"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/yellow"
+                android:gravity="center"
+                android:text="WINNER"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greenround"
+                    android:text="+1 Green"
+                    android:textColor="#60b108"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/redround"
+                    android:text="+1 RED"
+                    android:textColor="#fc4b54"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/yellow"
+                android:gravity="center"
+                android:text="WINNER"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greenround"
+                    android:text="+1 Green"
+                    android:textColor="#60b108"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/redround"
+                    android:text="+1 RED"
+                    android:textColor="#fc4b54"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/yellow"
+                android:gravity="center"
+                android:text="WINNER"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greenround"
+                    android:text="+1 Green"
+                    android:textColor="#60b108"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:padding="2dp"
+
+                    android:text="20"
+
+                    android:textColor="#86888b"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/redround"
+                    android:text="+1 RED"
+                    android:textColor="#fc4b54"
+
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/yellow"
+                android:gravity="center"
+                android:text="WINNER"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/yellow"
+            android:gravity="center"
+            android:text="Timer"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/yellow"
+            android:gravity="center"
+            android:text="RENEW GAME"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+

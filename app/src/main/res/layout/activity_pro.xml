@@ -58,10 +58,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="80dp"
             android:layout_marginTop="10dp"
             android:weightSum="2"
             android:id="@+id/first"
+
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:orientation="horizontal">
@@ -95,10 +96,11 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="80dp"
             android:layout_marginTop="10dp"
             android:weightSum="2"
             android:id="@+id/second"
+
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_below="@+id/first"
@@ -107,6 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:id="@+id/alphabet"
                 android:textColor="@color/white"
                 android:layout_marginRight="13dp"
                 android:background="@drawable/yellow"
@@ -132,9 +135,10 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="80dp"
             android:layout_marginTop="10dp"
             android:weightSum="2"
+
             android:id="@+id/third"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
@@ -172,8 +176,9 @@
 
             android:layout_height="60dp"
 
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:weightSum="2"
+
             android:id="@+id/four"
             android:layout_below="@+id/third"
             android:orientation="horizontal">
@@ -213,18 +218,22 @@
             android:layout_marginTop="10dp"
             android:weightSum="2"
             android:id="@+id/fifth"
+
             android:layout_below="@+id/four"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
+
             <Button
+                android:id="@+id/contact"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textColor="#16bbe9"
-                android:background="@drawable/textround"
-                android:textSize="18sp"
                 android:layout_marginLeft="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/textround"
+                android:text="Contact Us"
+                android:textColor="#16bbe9"
 
-                android:text="Contact Us"/>
+                android:textSize="18sp" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
