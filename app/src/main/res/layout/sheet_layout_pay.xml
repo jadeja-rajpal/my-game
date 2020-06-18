@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent">
     <TextView
         android:layout_width="match_parent"
@@ -11,8 +12,17 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:textColor="#333030"
-        android:text="Are you sure you want to choose this option ?"
+        android:text="ENTER THE AMOUNT YOU WANT TO BET ?"
         android:textSize="18dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        android:id="@+id/amountpay"
+        android:hint="Min 10 rupees"
+        android:layout_marginTop="10dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="cancel"
-            android:background="@drawable/yellow"
+            android:background="@drawable/newyellow"
             android:id="@+id/colorcancel"
             android:layout_marginLeft="10dp"
             android:textColor="#fff"
@@ -34,7 +44,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/yellow"
+            android:background="@drawable/newyellow"
             android:id="@+id/colorok"
             android:text="confirm"
             android:textColor="#fff"
@@ -45,7 +55,3 @@
     </LinearLayout>
 
 </LinearLayout>
-
-
-
-

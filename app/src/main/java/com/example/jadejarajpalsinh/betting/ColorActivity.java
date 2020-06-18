@@ -15,7 +15,11 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ColorActivity extends AppCompatActivity {
 
@@ -32,11 +36,51 @@ public class ColorActivity extends AppCompatActivity {
         TextView gamerule=findViewById(R.id.gamerule);
         retrieve = findViewById(R.id.retrieve);
 
-
         DatabaseReference databaseReference=FirebaseDatabase.getInstance().getReference().child("timer");
 
+        Query top5=FirebaseDatabase.getInstance().getReference().child("names").orderByChild("value").limitToLast(2);
 
 
+
+
+
+        top5.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                ArrayList<String> userlist = new ArrayList<String>();
+                for(DataSnapshot dsp: dataSnapshot.getChildren()){
+                    userlist.add(String.valueOf(dsp.getKey()));
+                }
+                Toast.makeText(getApplicationContext(),
+                        " top 2" + userlist, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        Query dat=FirebaseDatabase.getInstance().getReference().child("names").orderByChild("date").startAt("Jun 4, 2020 3:51:49 PM").endAt("Jun 4, 2023 3:51:49 PM");
+
+
+
+
+        dat.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                ArrayList<String> userlist = new ArrayList<String>();
+                for(DataSnapshot dsp: dataSnapshot.getChildren()){
+                    userlist.add(String.valueOf(dsp.getKey()));
+                }
+                Toast.makeText(getApplicationContext(),
+                        " date" + userlist, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override

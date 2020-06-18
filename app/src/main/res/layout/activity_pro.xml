@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -159,6 +164,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:id="@+id/newapp"
 
                 android:textColor="@color/white"
                 android:background="@drawable/yellow"
@@ -166,7 +172,7 @@
 
                 android:layout_marginRight="13dp"
                 android:layout_marginLeft="13dp"
-                android:text="CURRENCY" />
+                android:text="NEW APP" />
 
 
 
@@ -176,7 +182,7 @@
 
             android:layout_height="60dp"
 
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:weightSum="2"
 
             android:id="@+id/four"
@@ -252,9 +258,36 @@
 
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:weightSum="2"
+            android:id="@+id/sixth"
+
+            android:layout_below="@+id/fifth"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+
+                android:layout_height="wrap_content"
+                android:text="How To Play ?"
+                android:gravity="center"
+                />
+
+
+
+
+
+        </LinearLayout>
     </RelativeLayout>
 
 
 
 
 </LinearLayout>
+</ScrollView>

@@ -24,7 +24,9 @@
         <activity android:name=".ColorActivity" />
         <activity android:name=".TimerActivity" />
         <activity android:name=".ContactActivity" />
-        <activity android:name=".AdminActivity"></activity>
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".newapp" />
+        <activity android:name=".newcoin"></activity>
     </application>
 
 </manifest>

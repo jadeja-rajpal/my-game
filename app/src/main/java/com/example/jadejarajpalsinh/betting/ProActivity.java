@@ -21,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class ProActivity extends AppCompatActivity {
-    Button Addmoney,Withdrawlmoney,gamecolor,timer,contact,alphabet;
+    Button Addmoney,Withdrawlmoney,gamecolor,timer,contact,alphabet,newapp;
     TextView balance;
     DatabaseReference databaseReference;
     FirebaseUser user;
@@ -39,6 +39,7 @@ public class ProActivity extends AppCompatActivity {
         timer=(Button)findViewById(R.id.timer);
         contact=(Button)findViewById(R.id.contact);
         alphabet=(Button)findViewById(R.id.alphabet);
+        newapp=(Button)findViewById(R.id.newapp);
 
         user=FirebaseAuth.getInstance().getCurrentUser();
         uid=user.getUid();
@@ -67,6 +68,13 @@ public class ProActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent t=new Intent(ProActivity.this,TimerActivity
                         .class);
+                startActivity(t);
+            }
+        });
+        newapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t=new Intent(ProActivity.this,newapp.class);
                 startActivity(t);
             }
         });

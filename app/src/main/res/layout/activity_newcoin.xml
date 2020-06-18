@@ -1,55 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:weightSum="10"
-    android:layout_height="match_parent"
-    tools:context=".ColorActivity">
 
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+
+
+    android:orientation="vertical"
+
+
+    android:weightSum="10"
+
+
+    android:layout_height="match_parent"
+
+
+    tools:context=".newcoin">
     <RelativeLayout
+
+
         android:layout_width="match_parent"
+
+
         android:layout_height="0dp"
-        android:background="@color/colorAccent"
-        android:layout_weight="1.4">
+
+
+        android:background="@color/newgreen"
+
+
+        android:layout_weight="1.2">
+
 
         <android.support.v7.widget.CardView
+
+
             android:layout_width="300dp"
-            android:layout_height="120dp"
+
+
+            android:layout_height="100dp"
+
+
             app:cardElevation="10dp"
+
+
             android:layout_centerHorizontal="true"
+
+
             android:layout_marginTop="10dp">
+
+
             <LinearLayout
+
+
                 android:layout_width="match_parent"
+
+
                 android:layout_height="match_parent"
+
+
                 android:weightSum="2"
+
+
                 android:orientation="horizontal">
+
+
                 <LinearLayout
+
+
                     android:layout_width="0dp"
+
+
                     android:layout_height="match_parent"
+
+
                     android:orientation="vertical"
+
+
                     android:layout_weight="1"
+
+
                     android:gravity="center">
+
+
                     <TextView
+
+
                         android:layout_width="wrap_content"
+
+
                         android:layout_height="wrap_content"
+
+
                         android:text="Balance"
-                        android:textColor="@color/colorAccent"
+
+
+                        android:textColor="@color/newgreen"
+
+
                         android:textSize="19dp"/>
+
+
                     <TextView
+
+
                         android:layout_width="wrap_content"
+
+
                         android:layout_height="wrap_content"
+
+
                         android:text="0"
+
+
                         android:id="@+id/balance"
+
+
                         android:textSize="19dp"
+
+
                         android:textStyle="bold"
+
+
                         android:layout_marginTop="5dp"/>
 
 
 
+
+
+
+
+
+
+
+
                 </LinearLayout>
+
+
                 <LinearLayout
+
+
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -59,70 +153,131 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Game Fee"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="19dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="10"
-                        android:textSize="19dp"
-                        android:textStyle="bold" />
-
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-
-        </android.support.v7.widget.CardView>
-
-
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/colorAccent"
-        android:layout_weight="1.4">
-
-        <android.support.v7.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="120dp"
-            app:cardElevation="10dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="2"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="period"
-                        android:textColor="@color/colorAccent"
+                        android:textColor="@color/newgreen"
                         android:textSize="19dp"/>
                     <TextView
+                        android:id="@+id/gamefee"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
-
+                        android:text="min 10 "
                         android:textSize="19dp"
                         android:textStyle="bold"
                         android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
 
 
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+
+
+        android:layout_height="0dp"
+
+
+        android:layout_weight="1.2"
+
+
+        android:background="@color/newgreen">
+
+
+        <android.support.v7.widget.CardView
+
+
+
+            android:layout_width="300dp"
+
+
+            android:layout_height="100dp"
+
+
+            android:layout_centerHorizontal="true"
+
+
+            android:layout_marginBottom="10dp"
+
+
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+
+
+                android:layout_height="match_parent"
+
+
+                android:orientation="horizontal"
+
+
+                android:weightSum="2">
+
+
+                <LinearLayout
+
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="match_parent"
+
+
+                    android:layout_weight="1"
+
+
+                    android:gravity="center"
+
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+
+
+                        android:layout_height="wrap_content"
+
+
+                        android:text="period"
+
+
+                        android:textColor="@color/newgreen"
+
+
+                        android:textSize="19dp" />
+
+
+                    <TextView
+
+
+                        android:layout_width="wrap_content"
+
+
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginTop="5dp"
+
+                        android:text="0"
+                        android:id="@+id/period"
+
+                        android:textSize="19dp"
+
+
+                        android:textStyle="bold" />
 
                 </LinearLayout>
+
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -139,7 +294,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Count Down"
-                            android:textColor="@color/colorAccent"
+                            android:textColor="@color/newgreen"
                             android:textSize="19dp"/>
 
                     </LinearLayout>
@@ -150,16 +305,18 @@
 
                         android:orientation="horizontal"
                         android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="10"
-                        android:textSize="19dp"
-                        android:textStyle="bold"
-                        android:gravity="right"
-                        android:layout_weight="1"
-                        android:layout_marginTop="5dp"/>
                         <TextView
+                            android:id="@+id/txttime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00"
+                            android:textSize="19dp"
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="min left"
@@ -174,39 +331,33 @@
 
 
                 </LinearLayout>
-
-
             </LinearLayout>
-
 
         </android.support.v7.widget.CardView>
 
-
     </RelativeLayout>
 
-
     <TextView
-            android:id="@+id/gamecolorline"
-            android:layout_width="match_parent"
-            android:layout_height="22dp"
-        android:gravity="center"
-            android:textSize="20dp"
+        android:id="@+id/gamecolorline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
         android:background="@drawable/textbox"
-            android:textColor="#86888b"
-            android:layout_weight="0.4"
-            android:padding="2dp"
-            android:textStyle="bold"
-            android:singleLine="true"
-            android:ellipsize="marquee"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:scrollHorizontally="true"
-            android:text="GAME TIMING: 12:00 PM to 6:00 PM  | GAME TIMING: 12:00 PM to 6:00 PM "/>
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="2dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Check your internet connection | Check your internet connection"
+        android:textColor="#86888b"
+        android:textSize="18dp"
+        android:textStyle="bold" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:layout_weight="1.5"
-
         android:weightSum="2">
         <Button
             android:layout_width="match_parent"
@@ -214,13 +365,14 @@
             android:textSize="17dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:id="@+id/Joingreen"
+            android:id="@+id/joinhead"
             android:background="@drawable/greenround"
-            android:textColor="#60b108"
+            android:textColor="#3c6cd6"
             android:layout_marginLeft="36dp"
             android:layout_marginRight="13dp"
-            android:text="Join Green"
+            android:text="Join HEAD"
             />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -228,98 +380,70 @@
             android:layout_marginLeft="13dp"
             android:layout_marginRight="36dp"
             android:background="@drawable/redround"
-            android:textColor="#fc4b54"
-            android:id="@+id/Joingred"
+            android:textColor="#e438ab"
+            android:id="@+id/jointail"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="Join Red"
+            android:text="Join TAIL"
             />
-
-
-
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
+
+
+    <LinearLayout android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        android:layout_weight="0.5"
-
+        android:layout_weight="0.7"
         android:weightSum="2">
-        <CheckBox
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:textSize="14dp"
-            android:id="@+id/checkboxcolor"
-            android:textColor="#4e4c4c"
-            android:layout_marginLeft="36dp"
-
-            android:text="I agree the "
-            />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:textSize="14dp"
-            android:paddingTop="5dp"
-            android:id="@+id/gamerule"
+            android:textSize="16dp"
 
-            android:layout_marginRight="36dp"
+            android:layout_weight="1"
+            android:gravity="center"
 
-            android:textColor="#0d8dbc"
+            android:textColor="#86888b"
+            android:text="PERIOD"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="16dp"
 
-            android:text="game rule."
+            android:layout_weight="1"
+            android:gravity="center"
+
+
+            android:textColor="#86888b"
+            android:text="WINNER"
             />
 
 
 
     </LinearLayout>
-    <TextView
-        android:id="@+id/retrieve"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button_reset"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="00:00"
-        android:textColor="@android:color/black"
-        android:textSize="60sp" />
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        >
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recyclerView"
+            android:layout_width="401dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
 
 
-        android:weightSum="2">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:textSize="17dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:background="@drawable/greenround"
-            android:textColor="#60b108"
-            android:layout_marginLeft="36dp"
-            android:layout_marginRight="13dp"
-            android:text="Join Green"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:textSize="17dp"
-            android:layout_marginLeft="86dp"
-            android:layout_marginRight="70dp"
-            android:background="@drawable/redround"
-            android:textColor="#fc4b54"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="Join Red"
-            />
-
-
-
-    </LinearLayout>
 </LinearLayout>

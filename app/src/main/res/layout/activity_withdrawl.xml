@@ -1,92 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_marginBottom="20dp"
     android:layout_height="match_parent"
+
+    tools:context=".WithdrawlActivity"
+    android:weightSum="5"
+
     android:orientation="vertical"
-    tools:context=".WithdrawlActivity">
+
+
+    >
+
+
+
     <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="2"
         android:background="@color/colorAccent"
+
         android:orientation="vertical">
+
+
 
         <TextView
-            android:layout_width="wrap_content"
+
+            android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
-            android:textSize="50sp"
-            android:layout_marginTop="40dp"
+
+            android:textSize="30sp"
+            android:layout_weight="2"
+            android:gravity="center"
+
             android:textColor="#fff"
+
             android:textStyle="bold"
-            android:text="Withdrawl"
-            android:layout_gravity="center_horizontal"
+
+            android:text="WITHDRAW MONEY"
+
+
             />
+
     </LinearLayout>
+
     <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+
+        android:layout_height="0dp"
+        android:layout_weight="4.3"
+
         android:padding="10dp"
 
-        android:layout_margin="20dp"
+
+
+        android:weightSum="12"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+
         android:orientation="vertical">
 
+
+
         <EditText
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/Money"
-            android:padding="15dp"
-            android:hint="Enter Amount"
-            android:drawableStart="@drawable/ic_attach_money_black_24dp"
-            android:drawableLeft="@drawable/ic_attach_money_black_24dp"
-            android:inputType="number"
-            android:layout_marginTop="20dp"
-            android:textSize="15sp"
-            android:background="@drawable/textbox"
-            android:layout_gravity="center"
-            android:textColor="#000"/>
-        <EditText
-            android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
 
-            android:padding="15dp"
-            android:hint="Enter your number"
-            android:drawableStart="@drawable/ic_phone_android_black_24dp"
-            android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+            android:id="@+id/txtAmt"
+
+            android:padding="10dp"
+
+            android:hint="Enter Amount"
+
             android:inputType="number"
-            android:layout_marginTop="20dp"
-            android:textSize="15sp"
+
+            android:layout_marginTop="2dp"
+
+            android:textSize="16sp"
+
             android:background="@drawable/textbox"
+
             android:layout_gravity="center"
-            android:textColor="#000"/>
+
+            android:textColor="#000"
+            />
+        <EditText
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+
+
+            android:padding="10dp"
+
+            android:hint="Enter Bank Account Number"
+
+            android:inputType="number"
+
+            android:layout_marginTop="10dp"
+
+            android:textSize="16sp"
+
+            android:background="@drawable/textbox"
+
+            android:layout_gravity="center"
+
+            android:textColor="#000"
+            />
+        <EditText
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+
+
+            android:padding="10dp"
+
+            android:hint="ReEnter Bank Account Number"
+
+            android:inputType="number"
+
+            android:layout_marginTop="10dp"
+
+            android:textSize="16sp"
+
+            android:background="@drawable/textbox"
+
+            android:layout_gravity="center"
+
+            android:textColor="#000"
+            />
+
+        <EditText
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+
+
+            android:padding="10dp"
+
+            android:hint="Enter Account Holder Name"
+
+            android:inputType="number"
+
+            android:layout_marginTop="10dp"
+
+            android:textSize="16sp"
+
+            android:background="@drawable/textbox"
+
+            android:layout_gravity="center"
+
+            android:textColor="#000"
+            />
+
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:hint="Enter your UPI ID"
-            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
-            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
-            android:inputType="number"
-            android:layout_marginTop="20dp"
-            android:textSize="15sp"
+            android:id="@+id/txtUpi"
+            android:padding="10dp"
+            android:hint="Enter Paytm Number"
+              android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
             android:background="@drawable/textbox"
             android:layout_gravity="center"
-            android:textColor="#000"/>
+            android:textColor="#000"
+            />
 
 
         <Button
-            android:layout_width="150dp"
+            android:id="@+id/btnReq"
+            android:layout_width="120dp"
+
             android:layout_height="50dp"
-            android:layout_marginTop="30dp"
+
+            android:layout_marginTop="20dp"
+
             android:background="@drawable/yellow"
-            android:text="Withdrawl"
+
+            android:text="WITHDRAW\nREQUEST"
+
             android:layout_gravity="center"
 
             android:textColor="#fff"
-            android:textSize="18sp"
+            android:padding="3dp"
+
+            android:textSize="17sp"
+
             android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:id="@+id/txtnote"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:padding="5dp"
+            android:text="NOTE: Once the withdraw request has been generated successfully,
+your amount will be transfered to your PAYTM number (timing: 09:00pm to 12:00pm daily)\n \n
+For any withdraw related issue mail us at game111trade@gmail.com"
+            android:textColor="#97000000"
+            android:textSize="18sp" />
 
 
     </LinearLayout>
 
+
+
+
+
 </LinearLayout>
+</ScrollView>
